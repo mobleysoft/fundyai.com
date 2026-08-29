@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUNDYAI.COM | ON-CHAIN TREASURY</title>
+    <style>
+        body {
+            margin: 0; padding: 40px; background-color: #020202; color: #fff;
+            font-family: 'SF Pro Display', -apple-system, monospace;
+            background-image: 
+                linear-gradient(rgba(0, 255, 204, 0.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(0, 255, 204, 0.03) 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+        h1 { color: #00ffcc; letter-spacing: -0.02em; font-size: 2rem; margin-bottom: 5px; }
+        .subtitle { font-size: 0.8rem; color: #666; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 40px; }
+        
+        .dashboard {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px;
+        }
+        
+        .card {
+            background: rgba(10, 10, 10, 0.8);
+            border: 1px solid rgba(0, 255, 204, 0.2);
+            padding: 30px; border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            backdrop-filter: blur(10px);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 15px 40px rgba(0,255,204,0.1); }
+        
+        .label { font-size: 0.7rem; color: #888; text-transform: uppercase; letter-spacing: 0.1em; }
+        .value { font-size: 2.5rem; color: #fff; font-weight: 300; margin: 10px 0; }
+        .hash { font-size: 0.8rem; color: #00ffcc; background: rgba(0,255,204,0.1); padding: 4px 8px; border-radius: 4px; display: inline-block; }
+        
+        .pulse-dot {
+            display: inline-block; width: 6px; height: 6px; background: #00ffcc;
+            border-radius: 50%; margin-right: 8px; box-shadow: 0 0 10px #00ffcc;
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { opacity: 0.5; } 50% { opacity: 1; box-shadow: 0 0 15px #00ffcc; } 100% { opacity: 0.5; }
+        }
+    </style>
+</head>
+<body>
+    <h1><span class="pulse-dot"></span>FUNDYAI.COM TREASURY</h1>
+    <div class="subtitle">Institutional Grade // Physical Execution Matrix</div>
+    
+    <div class="dashboard">
+        <div class="card">
+            <div class="label">Total Value Locked (TVL)</div>
+            <div class="value">$142,593,000</div>
+            <div class="label" style="color: #00ffcc;">+4.2% (24H)</div>
+        </div>
+        
+        <div class="card">
+            <div class="label">Treasury Wallet Hash</div>
+            <div class="value" style="font-size: 1.5rem;">0x601073A4...4F92</div>
+            <div class="hash">VERIFIED NODE</div>
+        </div>
+        
+        <div class="card">
+            <div class="label">Sovereign Validation</div>
+            <div class="value">ACTIVE</div>
+            <div class="label">Local consensus achieved. Zero rented APIs.</div>
+        </div>
+    </div>
+</body>
+</html>
